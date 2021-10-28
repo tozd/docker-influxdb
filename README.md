@@ -1,4 +1,8 @@
-Image providing [InfluxDB](https://influxdata.com/time-series-platform/influxdb/) as a service.
+# tozd/influxdb
 
-*WARNING: This image is currently experimental and should not be used in production.*
+<https://gitlab.com/tozd/docker/influxdb>
 
+Available as:
+
+* [`tozd/influxdb`](https://hub.docker.com/r/tozd/influxdb)
+* [`registry.gitlab.com/tozd/docker/influxdb`](https://gitlab.com/tozd/docker/influxdb/container_registry)
