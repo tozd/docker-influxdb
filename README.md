@@ -24,3 +24,7 @@ Available as:
 
 - `8083/tcp`: HTTP port on which built-in, web-based admin interface listens.
 - `8086/tcp`: HTTP port for InfluxDB HTTP endpoints.
+
+## Description
+
+You can mount InfluxDB's `influxdb.toml` file into `/etc/influxdb/influxdb.toml` inside the container. See the file in the image to see how it is configured by default.
