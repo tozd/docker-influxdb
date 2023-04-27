@@ -13,7 +13,7 @@ Available as:
 
 ## Tags
 
-- `latest`: InfluxDB 1.2.4
+- `1.2`: InfluxDB 1.2.4
 
 ## Volumes
 
