@@ -22,7 +22,6 @@ Available as:
 
 ## Ports
 
-- `8083/tcp`: HTTP port on which built-in, web-based admin interface listens.
 - `8086/tcp`: HTTP port for InfluxDB HTTP endpoints.
 
 ## Description

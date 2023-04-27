@@ -1,7 +1,6 @@
 FROM registry.gitlab.com/tozd/docker/runit:ubuntu-trusty
 
 EXPOSE 8083/tcp
-EXPOSE 8086/tcp
 
 VOLUME /data
 VOLUME /var/log/influxdb
