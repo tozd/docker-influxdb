@@ -1,7 +1,7 @@
 #!/bin/sh
 
 echo "Running Docker image"
-docker run -d --name test --rm -p 8086:8086 "tozd/influxdb" || exit 1
+docker run -d --name test --rm -p 8086:8086 "${CI_REGISTRY_IMAGE}:${TAG}" || exit 1
 
 echo "Sleeping"
 sleep 10
