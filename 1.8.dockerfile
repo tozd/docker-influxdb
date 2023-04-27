@@ -8,7 +8,7 @@ VOLUME /var/log/influxdb
 ENV INFLUXDB_VERSION 1.8.10
 
 RUN apt-get update -q -q && \
-  apt-get --yes --force-yes install wget ca-certificates && \
+  apt-get --yes --force-yes install wget ca-certificates curl && \
   wget -O /tmp/influxdb.deb https://dl.influxdata.com/influxdb/releases/influxdb_${INFLUXDB_VERSION}_amd64.deb && \
   dpkg -i /tmp/influxdb.deb && \
   rm /tmp/influxdb.deb && \

@@ -114,7 +114,7 @@ reporting-disabled = true
 
   # MaxConcurrentDeletes is the maximum number of simultaneous DELETE calls on a shard
   # The default is 1, and should be left unchanged for most users
-  # max-concurrent-deletes = 1
+  # MaxConcurrentDeletes = 1
 
   # CompactThroughput is the rate limit in bytes per second that we
   # will allow TSM compactions to write to disk. Note that short bursts are allowed
@@ -396,7 +396,7 @@ reporting-disabled = true
 
 [logging]
   # Determines which log encoder to use for logs. Available options
-  # are auto, logfmt, and json. auto will use a more a more user-friendly
+  # are auto, logfmt, and json. auto will use a more user-friendly
   # output format if the output terminal is a TTY, but the format is not as
   # easily machine-readable. When the output is a non-TTY, auto will use
   # logfmt.
