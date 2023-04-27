@@ -5,7 +5,7 @@ EXPOSE 8083/tcp
 VOLUME /data
 VOLUME /var/log/influxdb
 
-ENV INFLUXDB_VERSION 1.7.10
+ENV INFLUXDB_VERSION 1.7.11
 
 RUN apt-get update -q -q && \
   apt-get --yes --force-yes install wget ca-certificates && \
