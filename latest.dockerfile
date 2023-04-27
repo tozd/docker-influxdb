@@ -18,4 +18,3 @@ RUN apt-get update -q -q && \
 
 COPY ./etc/influxdb /etc/influxdb
 COPY ./etc/service/influxd /etc/service/influxd
-
