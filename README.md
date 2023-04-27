@@ -14,6 +14,7 @@ Available as:
 ## Tags
 
 - `1.2`: InfluxDB 1.2.4
+- `1.3`: InfluxDB 1.3.9
 
 ## Volumes
 
