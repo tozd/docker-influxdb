@@ -11,6 +11,6 @@ wget -q -S -O - http://docker:8086/ping 2>&1 | grep -q X-Influxdb-Version
 result=$?
 
 echo "Stopping Docker image"
-docker stop test
+docker stop test || exit 2
 
 exit "$result"
