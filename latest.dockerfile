@@ -4,6 +4,7 @@ EXPOSE 8083/tcp
 EXPOSE 8086/tcp
 
 VOLUME /data
+VOLUME /var/log/influxdb
 
 ENV INFLUXDB_VERSION 1.2.4
 
@@ -15,4 +16,6 @@ RUN apt-get update -q -q && \
   apt-get purge --yes --force-yes --auto-remove wget ca-certificates && \
   apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* ~/.cache ~/.npm
 
-COPY ./etc /etc
+COPY ./etc/influxdb /etc/influxdb
+COPY ./etc/service/influxd /etc/service/influxd
+
