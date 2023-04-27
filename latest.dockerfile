@@ -17,4 +17,4 @@ RUN apt-get update -q -q && \
   apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* ~/.cache ~/.npm
 
 COPY ./etc/influxdb /etc/influxdb
-COPY ./etc/service/influxd /etc/service/influxd
+COPY ./etc/service/influxdb /etc/service/influxdb
