@@ -68,6 +68,12 @@ reporting-disabled = true
   # log any sensitive data contained within a query.
   # query-log-enabled = true
 
+  # It is possible to collect statistics of points written per-measurement and/or per-login.
+  # These can be accessed via the monitoring subsystem.
+  # ingress-metric-by-measurement-enabled = false
+  # ingress-metric-by-login-enabled = false
+
+
   # Provides more error checking. For example, SELECT INTO will err out inserting an +/-Inf value
   # rather than silently failing.
   # strict-error-handling = false
@@ -105,6 +111,10 @@ reporting-disabled = true
   # than 0 limits compactions to that value.  This setting does not apply
   # to cache snapshotting.
   # max-concurrent-compactions = 0
+
+  # MaxConcurrentDeletes is the maximum number of simultaneous DELETE calls on a shard
+  # The default is 1, and should be left unchanged for most users
+  # max-concurrent-deletes = 1
 
   # CompactThroughput is the rate limit in bytes per second that we
   # will allow TSM compactions to write to disk. Note that short bursts are allowed
@@ -188,6 +198,10 @@ reporting-disabled = true
   # The maximum number of group by time bucket a SELECT can create.  A value of zero will max the maximum
   # number of buckets unlimited.
   # max-select-buckets = 0
+
+  # Whether to print a list of running queries when a data node receives a SIGTERM (sent when a process
+  # exceeds a container memory limit, or by the kill command.
+  # termination-query-log = false
 
 ###
 ### [retention]
@@ -305,6 +319,10 @@ reporting-disabled = true
   # Enables authentication on the /ping, /metrics, and deprecated /status
   # endpoints. This setting has no effect if auth-enabled is set to false.
   # ping-auth-enabled = false
+
+  # Enables authentication on prometheus remote read api. This setting has no
+  # effect if auth-enabled is set to false.
+  # prom-read-auth-enabled = false
 
   # Determines whether HTTPS is enabled.
   # https-enabled = false
