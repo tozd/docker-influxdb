@@ -25,8 +25,8 @@ Available as:
 
 ## Volumes
 
-- `/var/log/influxdb`: log files
-- `/data`: data files, persist this volume to not lose state
+- `/var/log/influxdb`: Log files.
+- `/data`: Data files. Persist this volume to not lose state.
 
 ## Ports
 
