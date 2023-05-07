@@ -35,3 +35,8 @@ Available as:
 ## Description
 
 You can mount InfluxDB's `influxdb.toml` file into `/etc/influxdb/influxdb.toml` inside the container. See the file in the image to see how it is configured by default.
+
+## GitHub mirror
+
+There is also a [read-only GitHub mirror available](https://github.com/tozd/docker-influxdb),
+if you need to fork the project there.
