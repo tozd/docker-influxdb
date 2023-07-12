@@ -34,7 +34,8 @@ Available as:
 
 ## Description
 
-You can mount InfluxDB's `influxdb.toml` file into `/etc/influxdb/influxdb.toml` inside the container. See the file in the image to see how it is configured by default.
+You can mount InfluxDB's `influxdb.toml` file into `/etc/influxdb/influxdb.toml` inside the container or extend the image.
+See the file in the image to see how it is configured by default.
 
 ## GitHub mirror
 
