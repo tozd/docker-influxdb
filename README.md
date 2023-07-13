@@ -41,6 +41,9 @@ Available as:
 You can mount InfluxDB's `influxdb.toml` file into `/etc/influxdb/influxdb.toml` inside the container or extend the image.
 See the file in the image to see how it is configured by default.
 
+When `LOG_TO_STDOUT` is set to `1`, Docker image logs output to stdout and stderr. All stdout output is JSON.
+From InfluxDB 1.5 on also stored logs are JSON.
+
 ## GitHub mirror
 
 There is also a [read-only GitHub mirror available](https://github.com/tozd/docker-influxdb),
