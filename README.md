@@ -25,8 +25,12 @@ Available as:
 
 ## Volumes
 
-- `/var/log/influxdb`: Log files.
+- `/var/log/influxdb`: Log files when `LOG_TO_STDOUT` is not set to `1`.
 - `/data`: Data files. Persist this volume to not lose state.
+
+## Variables
+
+- `LOG_TO_STDOUT`: If set to `1` output logs to stdout (retrievable using `docker logs`) instead of log volumes.
 
 ## Ports
 

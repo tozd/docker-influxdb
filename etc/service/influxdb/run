@@ -1,3 +1,5 @@
 #!/bin/bash -e
 
-exec /usr/bin/influxd -config=/etc/influxdb/influxdb.toml 2>&1
+# InfluxDB prints a logo to stdout and we hide it by redirecting stdout to /dev/null.
+# Then we redirect stderr to (new) stdout.
+exec /usr/bin/influxd -config=/etc/influxdb/influxdb.toml 2>&1 >/dev/null

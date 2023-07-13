@@ -5,6 +5,8 @@ EXPOSE 8083/tcp
 VOLUME /data
 VOLUME /var/log/influxdb
 
+ENV LOG_TO_STDOUT=0
+
 ARG INFLUXDB_VERSION=1.7.11
 
 RUN apt-get update -q -q && \
@@ -17,3 +19,4 @@ RUN apt-get update -q -q && \
 
 COPY ./etc/influxdb /etc/influxdb
 COPY ./etc/service/influxdb /etc/service/influxdb
+COPY ./log /etc/service/influxdb/log

@@ -400,7 +400,7 @@ reporting-disabled = true
   # output format if the output terminal is a TTY, but the format is not as
   # easily machine-readable. When the output is a non-TTY, auto will use
   # logfmt.
-  # format = "auto"
+  format = "json"
 
   # Determines which level of logs will be emitted. The available levels
   # are error, warn, info, and debug. Logs that are equal to or above the
