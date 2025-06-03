@@ -6,3 +6,4 @@ files/influxdb_1.8.10_amd64.deb filter=lfs diff=lfs merge=lfs -text
 files/influxdb-1.11.8-amd64.deb filter=lfs diff=lfs merge=lfs -text
 files/influxdb_1.2.4_amd64.deb filter=lfs diff=lfs merge=lfs -text
 files/influxdb_1.3.9_amd64.deb filter=lfs diff=lfs merge=lfs -text
+files/influxdb-1.11.8-2-amd64.deb filter=lfs diff=lfs merge=lfs -text
