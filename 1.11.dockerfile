@@ -11,7 +11,7 @@ ARG INFLUXDB_VERSION=1.11.8-2
 
 RUN apt-get update -q -q && \
   apt-get --yes --force-yes install wget ca-certificates curl && \
-  wget -O /tmp/influxdb.deb https://dl.influxdata.com/influxdb/releases/influxdb-${INFLUXDB_VERSION}-amd64.deb && \
+  wget -O /tmp/influxdb.deb https://gitlab.com/tozd/docker/influxdb/-/raw/master/files/influxdb-${INFLUXDB_VERSION}-amd64.deb && \
   dpkg -i /tmp/influxdb.deb && \
   rm /tmp/influxdb.deb && \
   apt-get purge --yes --force-yes --auto-remove wget ca-certificates && \
