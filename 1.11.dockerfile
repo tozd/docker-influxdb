@@ -10,7 +10,7 @@ ENV LOG_TO_STDOUT=0
 ARG INFLUXDB_VERSION=1.11.8-2
 
 RUN apt-get update -q -q && \
-  apt-get --yes --force-yes install wget ca-certificates curl && \
+  apt-get --yes --force-yes install wget ca-certificates curl logrotate && \
   wget -O /tmp/influxdb.deb https://gitlab.com/tozd/docker/influxdb/-/raw/master/files/influxdb-${INFLUXDB_VERSION}-amd64.deb && \
   dpkg -i /tmp/influxdb.deb && \
   rm /tmp/influxdb.deb && \
