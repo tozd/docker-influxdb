@@ -20,10 +20,7 @@ Available as:
 - `1.6`: InfluxDB 1.6.6
 - `1.7`: InfluxDB 1.7.11
 - `1.8`: InfluxDB 1.8.10
-- `1.9`: InfluxDB 1.9.13
-- `1.10`: InfluxDB 1.10.8
 - `1.11`: InfluxDB 1.11.8
-- `1.12`: InfluxDB 1.12.0
 
 ## Volumes
 
