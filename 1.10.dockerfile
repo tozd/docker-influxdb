@@ -7,7 +7,7 @@ VOLUME /var/log/influxdb
 
 ENV LOG_TO_STDOUT=0
 
-ARG INFLUXDB_VERSION=1.10.3
+ARG INFLUXDB_VERSION=1.10.8
 
 RUN apt-get update -q -q && \
   apt-get --yes --force-yes install wget ca-certificates curl && \
