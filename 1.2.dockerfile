@@ -17,6 +17,5 @@ RUN apt-get update -q -q && \
   apt-get purge --yes --force-yes --auto-remove wget ca-certificates && \
   apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* ~/.cache ~/.npm
 
-COPY ./etc/influxdb /etc/influxdb
-COPY ./etc/service/influxdb /etc/service/influxdb
+COPY ./etc /etc
 COPY ./log-1.2 /etc/service/influxdb/log
